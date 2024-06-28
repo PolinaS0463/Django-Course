@@ -13,7 +13,7 @@ class ClientForm(ModelForm):
                     'address' : TextInput(attrs={'placeholder' : 'Введите адрес'})
                   }
         
-class Product(ModelForm):
+class ProductForm(ModelForm):
     class Meta:
         model = Product
         fields = ['title', 'description', 'price', 'amount']
